@@ -10,8 +10,6 @@ var dictionary : [String:String] = ["Person1": "Colby","Person2": "Caitlin"]
 dictionary["Person1"] = "Joey"
 
 //Lookup returns an optional
-print(dictionary["Person1"])
-
 if let value = dictionary["Person1"] {
     print(value)
 }

@@ -1,0 +1,62 @@
+[
+  {
+    "name": "sprite",
+    "imageName": "sprite",
+    "calories": 100
+  },
+  {
+    "name": "coke",
+    "imageName": "coke",
+    "calories": 100
+  },
+  {
+    "name": "milk",
+    "imageName": "milk",
+    "calories": 50
+  },
+  {
+    "name": "coffee",
+    "imageName": "coffee",
+    "calories": 50
+  },
+  {
+    "name": "tea",
+    "imageName": "tea",
+    "calories": 200
+  },
+  {
+    "name": "water",
+    "imageName": "water",
+    "calories": 0
+  },
+  {
+    "name": "burger",
+    "imageName": "burger",
+    "calories": 300
+  },
+  {
+    "name": "fries",
+    "imageName": "fries",
+    "calories": 500
+  },
+  {
+    "name": "bread",
+    "imageName": "bread",
+    "calories": 100
+  },
+  {
+    "name": "lettuce",
+    "imageName": "lettuce",
+    "calories": 0
+  },
+  {
+    "name": "chicken",
+    "imageName": "chicken",
+    "calories": 50
+  },
+  {
+    "name": "cheese",
+    "imageName": "cheese",
+    "calories": 10
+  }
+]
