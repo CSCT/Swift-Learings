@@ -15,5 +15,6 @@ struct Item : Decodable,Identifiable{
     var name : String
     var imageName: String
     var calories: Int
+    var drink : Bool
     
 }

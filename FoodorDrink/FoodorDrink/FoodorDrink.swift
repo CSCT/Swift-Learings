@@ -10,18 +10,25 @@ import SwiftUI
 struct FoodorDrink: View {
     @State var items = [Item]()
     var dataService = DataService()
+    let columnCount: Int = 2
+    let gridSpacing: CGFloat = 16.0
     
     
     var body: some View {
+        
         NavigationStack{
             HStack {
                 
                 NavigationLink {
                     ScrollView{
-                        LazyVGrid(columns: [GridItem(.fixed(300))], content: {
+                        LazyVGrid(columns: Array(repeating: .init(.flexible(), spacing: gridSpacing), count: columnCount), spacing: gridSpacing) {
+                            
                             ForEach(items){item in
-                                ItemView(item: Item(name: item.name, imageName: "burger", calories: item.calories))
-                            }                        })
+                                if !item.drink {
+                                    ItemView(item: Item(name: item.name, imageName: item.imageName, calories: item.calories, drink:item.drink))
+                                }
+                            }
+                        }
                     }
                     .onAppear(perform: {
                         items = dataService.getFileData()
@@ -47,7 +54,20 @@ struct FoodorDrink: View {
 
                 
                 NavigationLink {
-                    ItemView(item: Item(name: "Burger", imageName: "burger", calories: 500))
+                    ScrollView {
+                        LazyVGrid(columns: Array(repeating: .init(.flexible(), spacing: gridSpacing), count: columnCount), spacing: gridSpacing) {
+                            
+                            ForEach(items){item in
+                                if item.drink {
+                                    ItemView(item: Item(name: item.name, imageName: item.imageName, calories: item.calories, drink:item.drink))
+                                }
+                            }
+                        }
+                    }
+                    .onAppear(perform: {
+                        items = dataService.getFileData()
+
+                    })
                 } label: {
                     ZStack{
                         Color.blue
@@ -55,7 +75,7 @@ struct FoodorDrink: View {
                             .clipShape(.rect(cornerRadius: 15))
                         VStack{
                             Text("🧋")
-                            Text("Food")
+                            Text("Drink")
                         }
                     }
                 }

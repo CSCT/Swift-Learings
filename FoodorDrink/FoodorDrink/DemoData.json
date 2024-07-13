@@ -2,61 +2,73 @@
   {
     "name": "sprite",
     "imageName": "sprite",
-    "calories": 100
+    "calories": 100,
+    "drink": true
   },
   {
     "name": "coke",
     "imageName": "coke",
-    "calories": 100
+    "calories": 100,
+    "drink": true
   },
   {
     "name": "milk",
     "imageName": "milk",
-    "calories": 50
+    "calories": 50,
+    "drink": true
   },
   {
     "name": "coffee",
     "imageName": "coffee",
-    "calories": 50
+    "calories": 50,
+    "drink": true
   },
   {
     "name": "tea",
     "imageName": "tea",
-    "calories": 200
+    "calories": 200,
+    "drink": true
   },
   {
     "name": "water",
     "imageName": "water",
-    "calories": 0
+    "calories": 0,
+    "drink": true
   },
   {
     "name": "burger",
     "imageName": "burger",
-    "calories": 300
+    "calories": 300,
+    "drink": false
   },
   {
     "name": "fries",
     "imageName": "fries",
-    "calories": 500
+    "calories": 500,
+    "drink": false
   },
   {
     "name": "bread",
     "imageName": "bread",
-    "calories": 100
+    "calories": 100,
+    "drink": false
   },
   {
     "name": "lettuce",
     "imageName": "lettuce",
-    "calories": 0
+    "calories": 0,
+    "drink": false
   },
   {
     "name": "chicken",
     "imageName": "chicken",
-    "calories": 50
+    "calories": 50,
+    "drink": false
   },
   {
     "name": "cheese",
     "imageName": "cheese",
-    "calories": 10
+    "calories": 10,
+    "drink": false
   }
 ]
