@@ -3,5 +3,7 @@
     <pages>
         <page name='Dictionary'/>
         <page name='Loops'/>
+        <page name='Optionals'/>
+        <page name='Error Handling'/>
     </pages>
 </playground>
