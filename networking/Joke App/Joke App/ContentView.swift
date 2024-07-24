@@ -24,7 +24,7 @@ struct ContentView: View {
         }
         .padding()
     }
-     
+    
     func apicall () async {
         //1.URL
         if let url = URL(string: "https://v2.jokeapi.dev/joke/Any?type=single"){
