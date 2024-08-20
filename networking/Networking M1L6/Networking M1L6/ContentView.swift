@@ -16,19 +16,18 @@ struct ContentView: View {
             Text("Hello, world!")
         }
         .padding()
-        .onAppear(perform: {
-            Task{
-                await apiCall()
-            }
-        })
+        .task {
+            await apiCall()
+        }
     }
     
     func apiCall() async{
-        //1. URL
+        //1. URL -> returns optional
         if let url = URL(string:"https://api.pexels.com/v1/search?query=nature&per_page=1") {
             
             //2. URLRequest
             var request = URLRequest(url: url)
+            //Adding header field
             request.addValue("PWUp6sAtMGRrY1HPn8r6nOw8qOCdsc136yAdSyL6Y5m1WEDSc2cCitjh", forHTTPHeaderField: "Authorization")
             
             //3. URLSession
