@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EE03A97C2C8E7848005284F5 /* BusinessDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE03A97B2C8E7848005284F5 /* BusinessDetailView.swift */; };
 		EE73DCAE2C87F34A001642CD /* TextHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE73DCAD2C87F34A001642CD /* TextHelper.swift */; };
 		EEA216E82C55E54000AC9654 /* CitySights_AppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA216E72C55E54000AC9654 /* CitySights_AppApp.swift */; };
 		EEA216EA2C55E54000AC9654 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA216E92C55E54000AC9654 /* ContentView.swift */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EE03A97B2C8E7848005284F5 /* BusinessDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessDetailView.swift; sourceTree = "<group>"; };
 		EE73DCAD2C87F34A001642CD /* TextHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextHelper.swift; sourceTree = "<group>"; };
 		EEA216E42C55E54000AC9654 /* CitySights App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CitySights App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EEA216E72C55E54000AC9654 /* CitySights_AppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitySights_AppApp.swift; sourceTree = "<group>"; };
@@ -69,6 +71,7 @@
 		EEA216E62C55E54000AC9654 /* CitySights App */ = {
 			isa = PBXGroup;
 			children = (
+				EE03A97B2C8E7848005284F5 /* BusinessDetailView.swift */,
 				EE73DCAC2C87F339001642CD /* Helpers */,
 				EEC485D62C78148000C2935E /* Model */,
 				EEC485D32C74254900C2935E /* CitySights-App-Info.plist */,
@@ -170,6 +173,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EEC485D52C7563D700C2935E /* DataService.swift in Sources */,
+				EE03A97C2C8E7848005284F5 /* BusinessDetailView.swift in Sources */,
 				EEC485D82C78148F00C2935E /* BusinessSearch.swift in Sources */,
 				EEA216EA2C55E54000AC9654 /* ContentView.swift in Sources */,
 				EEC485DA2C7814B500C2935E /* Business.swift in Sources */,
