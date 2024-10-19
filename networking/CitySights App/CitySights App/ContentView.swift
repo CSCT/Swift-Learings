@@ -9,16 +9,15 @@ import SwiftUI
 
 struct ContentView: View {
     
-    @State var businesses = [Business]()
-    @State var query: String = ""
-    @State var selectedBusiness: Business?
-    var service = DataService()
-    
+    @Environment(BusinessModel.self) var model
+
     var body: some View {
+        
+        @Bindable var model = model
         VStack{
             HStack {
                 
-                TextField("What are you looking for?", text: $query)
+                TextField("What are you looking for?", text: $model.query)
                     .textFieldStyle(.roundedBorder)
                 Button(action: {
                     //TODO: Implement Query
@@ -32,7 +31,7 @@ struct ContentView: View {
                 })
             }
             List{
-                ForEach(businesses){ business in
+                ForEach(model.businesses){ business in
                     VStack (spacing: 20){
                         HStack (spacing:0){
                             Image("list-placeholder-image")
@@ -52,21 +51,18 @@ struct ContentView: View {
                         
                     }
                     .onTapGesture {
-                        selectedBusiness = business
+                        model.selectedBusiness = business
                     }
                 }
                 .listRowSeparator(.hidden)
             }
             .listStyle(.plain)
-            
-            
         }
-        .padding()
-        .task {
-            businesses = await service.businessSearch()
+        .onAppear {
+            model.getBusinesses()
         }
-        .sheet(item: $selectedBusiness) { item in
-            BusinessDetailView(business: item)
+        .sheet(item: $model.selectedBusiness) { item in
+            BusinessDetailView()
         }
     }
 }

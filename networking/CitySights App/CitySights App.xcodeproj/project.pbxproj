@@ -16,6 +16,7 @@
 		EEC485D52C7563D700C2935E /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC485D42C7563D700C2935E /* DataService.swift */; };
 		EEC485D82C78148F00C2935E /* BusinessSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC485D72C78148F00C2935E /* BusinessSearch.swift */; };
 		EEC485DA2C7814B500C2935E /* Business.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC485D92C7814B500C2935E /* Business.swift */; };
+		EECE495A2CC45E2900731932 /* BusinessModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECE49592CC45E2300731932 /* BusinessModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		EEC485D42C7563D700C2935E /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		EEC485D72C78148F00C2935E /* BusinessSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessSearch.swift; sourceTree = "<group>"; };
 		EEC485D92C7814B500C2935E /* Business.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Business.swift; sourceTree = "<group>"; };
+		EECE49592CC45E2300731932 /* BusinessModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,12 +73,13 @@
 		EEA216E62C55E54000AC9654 /* CitySights App */ = {
 			isa = PBXGroup;
 			children = (
+				EECE49592CC45E2300731932 /* BusinessModel.swift */,
 				EE03A97B2C8E7848005284F5 /* BusinessDetailView.swift */,
+				EEA216E92C55E54000AC9654 /* ContentView.swift */,
 				EE73DCAC2C87F339001642CD /* Helpers */,
 				EEC485D62C78148000C2935E /* Model */,
 				EEC485D32C74254900C2935E /* CitySights-App-Info.plist */,
 				EEA216E72C55E54000AC9654 /* CitySights_AppApp.swift */,
-				EEA216E92C55E54000AC9654 /* ContentView.swift */,
 				EEC485D42C7563D700C2935E /* DataService.swift */,
 				EEC485D22C74248C00C2935E /* Config.xcconfig */,
 				EEA216EB2C55E54100AC9654 /* Assets.xcassets */,
@@ -175,6 +178,7 @@
 				EEC485D52C7563D700C2935E /* DataService.swift in Sources */,
 				EE03A97C2C8E7848005284F5 /* BusinessDetailView.swift in Sources */,
 				EEC485D82C78148F00C2935E /* BusinessSearch.swift in Sources */,
+				EECE495A2CC45E2900731932 /* BusinessModel.swift in Sources */,
 				EEA216EA2C55E54000AC9654 /* ContentView.swift in Sources */,
 				EEC485DA2C7814B500C2935E /* Business.swift in Sources */,
 				EE73DCAE2C87F34A001642CD /* TextHelper.swift in Sources */,
