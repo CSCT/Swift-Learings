@@ -39,9 +39,9 @@ struct HomeView: View {
                                 .padding(.vertical, 12)
                                 .padding(.horizontal, 8)
                                 .background(
-                                    RoundedRectangle(cornerRadius: 10)
+                                    RoundedRectangle(cornerRadius: 12)
                                         .fill(selectedMealTypes.contains(mealType) ? Color.black : Color.white)
-                                        .shadow(color: .gray.opacity(0.3), radius: 3, x: 0, y: 2)
+                                        .shadow(color: .gray.opacity(0.3), radius: 4, x: 0, y: 4)
                                 )
                         }
                     }

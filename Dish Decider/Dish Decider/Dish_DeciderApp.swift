@@ -11,7 +11,7 @@ import SwiftUI
 struct Dish_DeciderApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            HomeView()
         }
     }
 }
